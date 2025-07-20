@@ -1,0 +1,6 @@
+<h1>All Stores</h1>
+<ul>
+  {% for slug, store in stores.items() %}
+    <li><a href="http://{{ slug }}.localhost:5000">{{ store.name }}</a></li>
+  {% endfor %}
+</ul>
